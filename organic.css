@@ -1,0 +1,76 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+*{
+    padding: 0;
+    margin: 0;
+}
+/* HOME */
+.home{
+    height: 100vh;
+    width: 100%;
+    background-color:green;
+    background:url('slide.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.home>section{
+    height: 120px;
+    width: 85%;
+    /* background-color: aliceblue; */
+}
+section>header{
+    height: 35%;
+    width: 100%;
+    background-color: rgba(28, 70, 28, 0.286);
+    backdrop-filter: blur(3px);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header>.header-item{
+    display: flex;
+    align-items:center;
+    gap: 7px;
+    a{
+        display: flex;
+        gap:10px;
+        color: white;
+        text-decoration: none;
+    }
+}
+section>nav{
+    height: 65%;
+    width: 100%;
+    background-color: limegreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav>.nav-items{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+        
+        /* .bi:not(.bi:nth-child(3)){
+            transform: rotate(100deg);
+            transition: all 0.5s ease;
+        } */
+    }
+}
+.bi{
+    display: inline-block;
+}
+nav a:hover:not(a:nth-child(5)) .bi{
+    transform: rotate(100deg);
+    transition: all 0.5s ease;
+}
